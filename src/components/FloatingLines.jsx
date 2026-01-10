@@ -201,7 +201,7 @@ void main() {
     resize();
 
     const render = t => {
-      uniforms.iTime.value = t * 0.006;
+      uniforms.iTime.value = t * 0.0009;
 
       const lerpFactor = 0.1;
       mousePositionRef.current.x += (targetMouseRef.current.x - mousePositionRef.current.x) * lerpFactor;

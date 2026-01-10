@@ -32,7 +32,7 @@ const Hero = () => {
               Innovate. <span className="text-blue-600">Secure.</span> Transform.
             </h1>
 
-            <p className="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="mt-2 text-lg text-slate-600 max-w-2xl mx-auto">
               Delivering secure, scalable, and intelligent IT solutions —
               from infrastructure and cybersecurity to cloud and managed services.
             </p>
