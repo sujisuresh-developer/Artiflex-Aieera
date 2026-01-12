@@ -65,14 +65,14 @@ const services = [
 ]
 
 const clientLogos = [
-  "./src/assets/dubai-duty-free-seeklogo.png",
-  "./src/assets/28.png",
-  "./src/assets/idAIdoQlaN_1766401349277.png",
-  "./src/assets/idIu5Lf4Sf_1766399953051.png",
-  "./src/assets/idmHZx4yfP_logos.png",
-  "./src/assets/idMNWTiY7c_logos.png",
-  "./src/assets/idze5P5g5P_logos.png",
-  "./src/assets/LnW7oU12lP7gNmfZJtUdl05IXcB1736410981931_200x200.png"
+  "/dubai-duty-free-seeklogo.png",
+  "/28.png",
+  "/idAIdoQlaN_1766401349277.png",
+  "/idIu5Lf4Sf_1766399953051.png",
+  "/idmHZx4yfP_logos.png",
+  "/idMNWTiY7c_logos.png",
+  "/idze5P5g5P_logos.png",
+  "/LnW7oU12lP7gNmfZJtUdl05IXcB1736410981931_200x200.png"
 ]
 
 const Services = () => {
