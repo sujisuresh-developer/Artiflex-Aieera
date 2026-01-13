@@ -1,143 +1,78 @@
-
-
-import { useEffect } from "react"
-import gsap from "gsap"
-import CloudBackground from "../components/CloudBackground"
-import Benefits3D from "../components/Benefits3D"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-
 const InfrastructureSolutions = () => {
-
-  
-  useEffect(() => {
-  const clouds = gsap.utils.toArray(".cloud")
-
-  const move = (x, y) => {
-    clouds.forEach((cloud, i) => {
-      gsap.to(cloud, {
-        x: x * (i + 1) * 10,
-        y: y * (i + 1) * 10,
-        duration: 1.5,
-        ease: "power3.out",
-      })
-    })
-  }
-
-  const onMouseMove = (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 2
-    const y = (e.clientY / window.innerHeight - 0.5) * 2
-    move(x, y)
-  }
-
-  const onTouchMove = (e) => {
-    if (!e.touches[0]) return
-    const x = (e.touches[0].clientX / window.innerWidth - 0.5) * 2
-    const y = (e.touches[0].clientY / window.innerHeight - 0.5) * 2
-    move(x, y)
-  }
-
-  window.addEventListener("mousemove", onMouseMove)
-  window.addEventListener("touchmove", onTouchMove)
-
-  return () => {
-    window.removeEventListener("mousemove", onMouseMove)
-    window.removeEventListener("touchmove", onTouchMove)
-  }
-}, [])
-
   return (
     <>
-    <Header/>
-    
-    <section className="relative bg-white min-h-screen overflow-hidden">
-      <CloudBackground/>
+      <Header />
 
-      
-    
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 space-y-20">
-
-
-        {/* TITLE */}
-        <div>
-          <h1 className="text-5xl font-bold text-black mb-4">
+      {/* HERO */}
+      <section
+        className="relative h-[420px] bg-cover bg-center flex items-center mt-28 "
+        style={{
+          backgroundImage:
+            "url('https://png.pngtree.com/thumb_back/fh260/background/20241210/pngtree-person-engaging-with-a-cloud-computing-diagram-explaining-cloud-based-solutions-image_16678313.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-blue-900/70" />
+        <div className="relative max-w-7xl mx-auto px-6 text-white ">
+          <h1 className="text-5xl font-bold mb-4 flex items-center justify-center ">
             Infrastructure Solutions
           </h1>
-          <p className="text-gray-600 text-lg">
-            We offer our broad categories of services in its best Network
+          <p className="max-w-3xl text-lg text-blue-100">
+            Build a reliable IT foundation that ensures performance,
+            scalability, and business continuity.
           </p>
         </div>
+      </section>
 
-        {/* INTRO */}
-        <div>
-          <h2 className="text-3xl font-bold mb-4">
-            Choose the best Infrastructure Solutions
-          </h2>
-          <p className="text-gray-600 max-w-4xl leading-relaxed">
-            Our Infrastructure Solutions are designed to improve your
-            organization’s networking infrastructure to the next level.
-            We begin by conducting a comprehensive analysis of your current
-            network setup, examining performance, reliability, and security.
-          </p>
-        </div>
+      {/* CONTENT */}
+      <section className="bg-[#fdfdfd] py-24">
+        <div className="max-w-7xl mx-auto px-6 space-y-20">
 
-        {/* BENEFITS */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6">
-            Business Benefits
-          </h3>
-        <Benefits3D/>
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold mb-4">
+              Choose the Best Infrastructure Solutions
+            </h2>
+            <p className="text-gray-600 leading-relaxed">
+              Our Infrastructure Solutions are designed to improve your
+              organization’s networking infrastructure to the next level.
+              We begin with a complete assessment of your existing environment,
+              analyzing performance, security, and reliability.
+            </p>
+          </div>
 
-        </div>
-
-        {/* CTA */}
-        <div className="bg-blue-50 rounded-xl p-8">
-          <p className="text-blue-700 font-medium text-lg">
-            Order a free consultation – our experts will select the most
-            effective solution
-          </p>
-        </div>
-
-        {/* FAQ */}
-        <div>
-          <h3 className="text-2xl font-bold mb-6">
-            Questions & Answers
-          </h3>
-
-          <p className="text-gray-600 mb-4">
-            Optimizing your IT infrastructure is key to ensuring seamless
-            business operations. Here we answer common questions about
-            upgrading, managing, and securing your IT environment.
-          </p>
-
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-semibold">
-                Why is infrastructure optimization important?
-              </h4>
-              <p className="text-gray-600">
-                It improves performance, enhances security, and minimizes
-                downtime.
-              </p>
-            </div>
+          {/* GRID */}
+          <div className="grid md:grid-cols-2 gap-14 items-center">
+            <img
+              src="https://images.unsplash.com/photo-1581090700227-1e37b190418e"
+              className="rounded-2xl shadow-xl"
+              alt="IT Infrastructure"
+            />
 
             <div>
-              <h4 className="font-semibold">
-                Can infrastructure scale with business growth?
-              </h4>
-              <p className="text-gray-600">
-                Yes, our solutions are designed to grow with your business.
+              <h3 className="text-2xl font-bold mb-4">
+                IT Infrastructure Management
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Artiflex IT designs and manages secure, high-performance
+                infrastructure tailored to your business needs.
               </p>
+              <ul className="space-y-3 text-gray-600">
+                <li>✔ Enterprise-grade networking</li>
+                <li>✔ Server & data center management</li>
+                <li>✔ High availability & scalability</li>
+                <li>✔ Proactive monitoring & maintenance</li>
+              </ul>
             </div>
           </div>
-        </div>
 
-      </div>
-    </section>
-    <Footer/>
-    
+        
+
+        </div>
+      </section>
+
+      <Footer />
     </>
   )
 }

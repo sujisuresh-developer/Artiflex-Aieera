@@ -1,120 +1,60 @@
 import Header from "../components/Header"
-import Benefits3D from "../components/Benefits3D"
-import CloudBackground from "../components/CloudBackground"
+import Footer from "../components/Footer"
 
-const AMCService = () => {
+const AMCServices = () => {
   return (
     <>
       <Header />
 
-      <section className="relative bg-white min-h-screen overflow-hidden pt-[1px]">
-        <CloudBackground/>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 space-y-20">
+      <section
+        className="relative h-[420px] flex items-center bg-cover bg-center mt-28"
+        style={{
+          backgroundImage:
+            "url('https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aXQlMjBzb2x1dGlvbnxlbnwwfHwwfHx8MA%3D%3D')",
+        }}
+      >
+        <div className="absolute inset-0 bg-blue-900/70" />
+        <div className="relative max-w-7xl mx-auto px-6 text-white">
+          <h1 className="text-5xl font-bold mb-4 flex items-center justify-center ">
+            AMC Services
+          </h1>
+          <p className="text-lg text-blue-100 max-w-3xl">
+            Proactive maintenance and continuous IT support for business
+            continuity.
+          </p>
+        </div>
+      </section>
 
-          {/* TITLE */}
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-black mb-4">
-                AMC Services
-              </h1>
-              <p className="text-gray-600 text-lg">
-                Proactive IT support and maintenance solutions to ensure uptime,
-                security, and business continuity.
-              </p>
-            </div>
+      <section className="py-24 bg-[#fdfdfd]">
+        <div className="max-w-7xl mx-auto px-6 space-y-20">
 
-            {/* IMAGE (FROM HOME PAGE SET) */}
-            <div className="flex justify-center md:justify-end">
-              <img
-                src="https://artiflexit.com/wp-content/uploads/2025/04/Website-Mockup-1.webp"
-                alt="AMC Services"
-                className="w-[280px] md:w-[360px] rounded-xl shadow-xl"
-              />
-            </div>
-          </div>
+          <p className="max-w-4xl text-gray-600 text-lg">
+            Our AMC Services ensure your IT systems remain secure, stable, and
+            efficient through preventive maintenance, rapid issue resolution,
+            and continuous monitoring.
+          </p>
 
-          {/* INTRO */}
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Proactive IT Support
-            </h2>
-            <p className="text-gray-600 max-w-4xl leading-relaxed">
-              Artiflex IT offers comprehensive AMC Services designed to keep
-              your IT infrastructure running smoothly. With proactive
-              monitoring, regular updates, preventive maintenance, and
-              disaster recovery planning, we ensure minimal downtime,
-              improved performance, and uninterrupted business operations—so
-              you can focus on driving growth with confidence.
-            </p>
-          </div>
-
-          {/* BUSINESS BENEFITS */}
-          <div>
-            <h3 className="text-2xl font-bold mb-6">
-              Business Benefits
-            </h3>
-
-            <Benefits3D
-              items={[
-                "24/7 monitoring and proactive IT support",
-                "Reduced downtime and faster issue resolution",
-                "Improved system performance and reliability",
-                "Business continuity with backup & disaster recovery",
-              ]}
+          <div className="grid md:grid-cols-2 gap-16">
+            <img
+              src="https://images.unsplash.com/photo-1521791055366-0d553872125f"
+              className="rounded-2xl shadow-xl"
             />
-          </div>
 
-          {/* CTA */}
-          <div className="bg-blue-50 rounded-xl p-8">
-            <p className="text-blue-700 font-medium text-lg">
-              Order a free consultation – our experts will select the most
-              effective AMC solution for your business
-            </p>
-          </div>
-
-          {/* FAQ */}
-          <div>
-            <h3 className="text-2xl font-bold mb-6">
-              Questions & Answers
-            </h3>
-
-            <p className="text-gray-600 mb-4 max-w-4xl">
-              Our AMC Services provide comprehensive support and maintenance
-              to ensure your IT systems remain secure, stable, and efficient.
-              Explore our Q&A to gain a deeper understanding of how our AMC
-              solutions empower businesses to make informed IT decisions with
-              confidence.
-            </p>
-
-            <div className="space-y-6">
-              <div>
-                <h4 className="font-semibold">
-                  What does AMC Services include?
-                </h4>
-                <p className="text-gray-600">
-                  AMC Services include proactive monitoring, regular system
-                  maintenance, security updates, issue resolution, and
-                  disaster recovery support to ensure continuous operations.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="font-semibold">
-                  How do AMC Services improve business continuity?
-                </h4>
-                <p className="text-gray-600">
-                  By preventing system failures, minimizing downtime, and
-                  providing rapid support, AMC Services help maintain stable
-                  and uninterrupted business operations.
-                </p>
-              </div>
-            </div>
+            <ul className="space-y-4 text-gray-600 mt-20">
+              <li>✔ Preventive maintenance</li>
+              <li>✔ Security updates & patching</li>
+              <li>✔ Rapid incident resolution</li>
+              <li>✔ Business continuity support</li>
+              <li>✔ Reduced downtime & risk</li>
+            </ul>
           </div>
 
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }
 
-export default AMCService
+export default AMCServices

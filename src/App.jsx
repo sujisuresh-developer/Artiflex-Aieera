@@ -16,6 +16,8 @@ import CyberSecuritySolutions from './pages/CyberSecuritySolutions'
 import Contact from './pages/Contact'
 import Preloader from './components/Preloader'
 import { useEffect, useState } from 'react'
+import FAQ from './pages/FAQ'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
    const [loading, setLoading] = useState(true)
@@ -31,10 +33,11 @@ function App() {
   if (loading) {
     return <Preloader />
   }
-  
+
 
   return (
     <>
+       <ScrollToTop/>
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -48,6 +51,7 @@ function App() {
        <Route path="/cloud-solutions" element={<CloudSolutions />} />
        <Route path="/amc-services" element={<AMCService />} />
        <Route path="/managed-services" element={<ManagedServices />} />
+       <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
 
     </Routes>

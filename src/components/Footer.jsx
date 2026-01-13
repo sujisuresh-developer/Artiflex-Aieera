@@ -2,11 +2,11 @@ import { Link } from "react-router-dom"
 import logo from "/logo.png"
 
 const Footer = () => {
-    return (
-        <footer className="bg-white border-50px relative overflow-hidden">
+  return (
+    <footer className="relative overflow-hidden bg-gradient-to-br from-blue-300 via-blue-500 to-blue-50">
 
-            {/* INLINE ANIMATION (NO EXTRA CSS FILE) */}
-            <style>{`
+      {/* INLINE LOGO SHAKE ANIMATION */}
+      <style>{`
         @keyframes logoShake {
           0%   { transform: translateY(0) rotate(0deg); }
           20%  { transform: translateY(-2px) rotate(-1deg); }
@@ -17,44 +17,73 @@ const Footer = () => {
         }
       `}</style>
 
-            <div className="max-w-7xl mx-auto px-6 py-10">
+      <div className="w-full px-6 md:px-12 lg:px-20 py-20">
 
-                {/* TOP */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-14 text-white">
 
-                    {/* BIG LOGO WITH SHAKE */}
-                    <Link to="/" className="flex items-center">
-                        <img
-                            src={logo}
-                            alt="Artiflex IT"
-                            className="h-16 md:h-20"
-                            style={{
-                                animation: "logoShake 3.5s ease-in-out infinite",
-                            }}
-                        />
-                    </Link>
+          {/* LOGO + TAGLINE */}
+          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <Link to="/">
+              <img
+                src={logo}
+                alt="Artiflex IT"
+                className="h-20 mb-4"
+                style={{ animation: "logoShake 3.5s ease-in-out infinite" }}
+              />
+            </Link>
+            <p className="text-sm text-blue-100 max-w-xs">
+              Secure, scalable & reliable IT solutions helping businesses
+              transform infrastructure into uptime.
+            </p>
+          </div>
 
-                    {/* NAV LINKS */}
-                    <nav className="flex flex-wrap justify-center gap-6 text-sm font-medium text-gray-600">
-                        <Link to="/" className="hover:text-blue-600 transition">Home</Link>
-                        <Link to="/about" className="hover:text-blue-600 transition">About</Link>
-                        <Link to="/services" className="hover:text-blue-600 transition">Services</Link>
-                        <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
-                    </nav>
-                </div>
+          {/* QUICK LINKS */}
+          <div className="flex flex-col gap-4 items-center md:items-start">
+            <h4 className="font-semibold text-lg mb-2">Quick Links</h4>
 
-               
-                
+            <Link to="/" className="hover:text-white transition">Home</Link>
+            <Link to="/about" className="hover:text-white transition">About</Link>
+            <Link to="/contact" className="hover:text-white transition">Contact</Link>
+          </div>
 
-                {/* BOTTOM */}
-                <div className="text-center text-sm text-gray-500">
-                    © {new Date().getFullYear()}{" "}
-                    <span className="font-medium text-gray-700">Artiflex IT</span>.
-                    All rights reserved.
-                </div>
-            </div>
-        </footer>
-    )
+          {/* SERVICES */}
+          <div className="flex flex-col gap-4 items-center md:items-start">
+            <h4 className="font-semibold text-lg mb-2">Services</h4>
+
+            <Link to="/infrastructure-solutions" className="hover:text-white transition">
+              Infrastructure Solutions
+            </Link>
+            <Link to="/cyber-security-solutions" className="hover:text-white transition">
+              Cyber Security
+            </Link>
+            <Link to="/application-security-solutions" className="hover:text-white transition">
+              Application Security
+            </Link>
+            <Link to="/cloud-solutions" className="hover:text-white transition">
+              Cloud Solutions
+            </Link>
+            <Link to="/managed-services" className="hover:text-white transition">
+              Managed Services
+            </Link>
+            <Link to="/amc-services" className="hover:text-white transition">
+              AMC Services
+            </Link>
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="my-10 h-px bg-white/30" />
+
+        {/* COPYRIGHT */}
+        <div className="text-center text-sm text-blue-100">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-medium text-white">Artiflex IT</span>.
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer

@@ -7,13 +7,13 @@ const Header = () => {
   const [servicesOpen, setServicesOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b z-50">
+    <header className="fixed top-0 left-0 w-full bg-[#fdfdfd]/80 backdrop-blur-md border-b z-50">
 
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* LOGO */}
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Artiflex IT" className="h-10" />
+          <img src={logo} alt="Artiflex IT" className="h-20" />
         </Link>
 
         {/* DESKTOP NAV */}
@@ -57,6 +57,7 @@ const Header = () => {
               ))}
             </div>
           </div>
+          <Link to="/faq" className="hover:text-blue-600 transition">FAQ</Link>
 
           <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
         </nav>
@@ -124,6 +125,9 @@ const Header = () => {
 
             <Link to="/contact" onClick={() => setMobileOpen(false)} className="block hover:text-blue-600">
               Contact
+            </Link>
+             <Link to="/faq" onClick={() => setMobileOpen(false)} className="block hover:text-blue-600">
+              FAQ
             </Link>
           </div>
         </div>

@@ -3,6 +3,7 @@ import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Header from "../components/Header"
 import logo from "/logo.png"
+import Footer from "../components/Footer"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -106,7 +107,7 @@ const ServiceDetails = () => {
   return (
     <>
     <Header />
-    <section ref={containerRef} className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-white">
+    <section ref={containerRef} className="min-h-screen bg-gradient-to-br from-[#fdfdfd] via-blue-50 to-[#fdfdfd] mt-[30px]">
         
       <div className="max-w-7xl mx-auto px-6 py-24">
 
@@ -125,10 +126,7 @@ const ServiceDetails = () => {
               ensuring your company stays ahead of the curve.
             </p>
 
-            <p className="sd-left text-blue-600 text-lg font-medium">
-              Order a free consultation – our experts will select the most
-              effective solution.
-            </p>
+           
             <img src={logo} alt="Artiflex IT" className="h-10 mx-auto w-50 h-50 " />
           </div>
 
@@ -140,7 +138,7 @@ const ServiceDetails = () => {
                   {group.items.map((item, i) => (
                     <span
                       key={i}
-                      className="sd-pill px-4 py-2 rounded-full border text-sm font-semibold text-black bg-white cursor-pointer transition hover:-translate-y-1 hover:shadow-md"
+                      className="sd-pill px-4 py-2 rounded-full border text-sm font-semibold text-black bg-[#fdfdfd] cursor-pointer transition hover:-translate-y-1 hover:shadow-md"
                     >
                       {item}
                     </span>
@@ -153,6 +151,7 @@ const ServiceDetails = () => {
         </div>
       </div>
     </section>
+    <Footer />
     </>
   )
 }

@@ -1,13 +1,14 @@
 
 
-import BackgroundMotion from "../components/BackgroundMotion"
+
 
 import Footer from "../components/Footer"
-import GlobalParallax from "../components/GlobalParallax"
+
 import Header from "../components/Header"
 import Hero from "../components/Hero"
 
 import Industries from "../components/Industries"
+import LogoAutoScroll from "../components/LogoAutoScroll"
 
 
 import WhyChooseUs from "../components/WhyChooseUs"
@@ -17,8 +18,7 @@ const Home = () => {
   return (
     <>
     <Header/>
-    <BackgroundMotion />
-      <GlobalParallax />
+   
      
 
     
@@ -29,6 +29,7 @@ const Home = () => {
         <Services />
         <Industries />
         <WhyChooseUs />
+        <LogoAutoScroll/>
         <Footer/>
     
       

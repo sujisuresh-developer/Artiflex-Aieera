@@ -27,7 +27,7 @@ const industries = [
   }
 ]
 
-/* 🔵 ONE animation definition used everywhere */
+/*  animation definition used everywhere */
 const cardVariants = {
   hidden: {
     opacity: 0,
@@ -48,7 +48,7 @@ const cardVariants = {
 
 const Industries = () => {
   return (
-    <section className="py-28 bg-white">
+    <section className="py-28 bg-[#fdfdfd] -mt-25">
       <div data-depth="1" className="max-w-6xl mx-auto px-6">
 
         {/* SECTION TITLE */}
@@ -77,11 +77,10 @@ const Industries = () => {
               className="group relative rounded-xl"
             >
 
-              {/* 🔵 BLUE GLOW – SAME FOR ALL */}
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-200 to-blue-100 opacity-0 group-hover:opacity-100 transition duration-300" />
+
 
               {/* CARD */}
-              <div className="relative bg-white rounded-xl p-6 border border-slate-200 shadow-sm group-hover:shadow-xl transition">
+              <div className="relative bg-[#fdfdfd] rounded-xl p-6 border border-slate-200 shadow-sm group-hover:shadow-xl transition">
                 <h3 className="text-lg font-semibold text-blue-700 mb-3">
                   {item.title}
                 </h3>

@@ -1,146 +1,180 @@
-import { useEffect, useRef } from "react"
-import gsap from "gsap"
 import Header from "../components/Header"
-import BlobImage from "../components/BlobImage"
 import Footer from "../components/Footer"
 
 const AboutUs = () => {
-    const containerRef = useRef(null)
+  return (
+    <>
+      <Header />
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.from(".about-hero", {
-                y: 40,
-                opacity: 0,
-                duration: 1,
-                ease: "power3.out",
-            })
+      <section className="bg-[#fdfdfd] min-h-screen mt-[110px]">
 
-            gsap.from(".about-section", {
-                y: 30,
-                opacity: 0,
-                duration: 0.8,
-                stagger: 0.2,
-                ease: "power3.out",
-            })
-        }, containerRef)
+        {/* HERO */}
+        <div
+          className="relative h-[360px] flex items-center justify-center bg-center bg-cover w-full"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')",
+          }}
+        >
+          <div className="absolute inset-0 bg-blue-900/70" />
+          <h1 className="relative text-white text-5xl font-bold">
+            About Us
+          </h1>
+        </div>
 
-        return () => ctx.revert()
-    }, [])
+        {/* CONTENT WRAPPER */}
+        <div className="max-w-7xl mx-auto px-6 py-24 space-y-32">
 
-    return (
-        <>
-            <Header />
-            <section ref={containerRef} className="bg-white min-h-screen ">
+          {/* INTRO SECTION */}
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6">
+              We make sure your IT works for you
+            </h2>
 
-                {/* HERO */}
-                {/* HERO */}
-                <div
-                    className="relative h-[320px] flex items-center justify-center bg-center bg-cover w-full"
-                    style={{
-                        backgroundImage:
-                            "url('https://artiflexit.com/wp-content/uploads/2025/03/orizonjpg-024.jpg')",
-                    }}
-                >
-                    {/* Blue overlay */}
-                    <div className="absolute inset-0 bg-blue-900/70" />
+            <p className="text-gray-600 leading-relaxed">
+              We develop custom IT solutions tailored to your unique business needs,
+              ensuring efficiency, scalability, and security at every stage.
+              Our approach focuses on building reliable systems that support daily
+              operations while preparing your business for future growth.
+            </p>
 
-                    {/* Content */}
-                    <h1 className="relative text-white text-5xl font-bold">
-                        About Us
-                    </h1>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              By choosing Artiflex IT, you gain a dedicated technology partner
+              committed to understanding your challenges and delivering solutions
+              that truly fit.
+            </p>
+          </div>
+
+          {/* IMAGE ROW (LIKE DESIGN) */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+              "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+              "https://images.unsplash.com/photo-1531498860502-7c67cf02f657",
+              "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+            ].map((img, i) => (
+              <img
+                key={i}
+                src={img}
+                alt="Team work"
+                className="rounded-2xl object-cover w-full h-56"
+              />
+            ))}
+          </div>
+
+          {/* SECTION 1 */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661878265739-da90bc1af051?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGF0YSUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D"
+              alt="IT Infrastructure"
+              className="rounded-3xl shadow-xl"
+            />
+
+            <div>
+              <h3 className="text-3xl font-bold mb-4">
+                IT Infrastructure Management
+              </h3>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Build a reliable IT foundation for smooth operations.
+                Artiflex IT designs and manages secure, high-performance
+                infrastructure tailored to your business.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                From system setup to ongoing maintenance, we ensure everything
+                runs efficiently so your team can stay focused on what matters.
+              </p>
+            </div>
+          </div>
+
+          {/* SECTION 2 */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 className="text-3xl font-bold mb-4">
+                Cybersecurity & Protection
+              </h3>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Keep your business secure from modern threats.
+                Safeguard your data, devices, and network with advanced
+                endpoint protection, firewalls, and security monitoring.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Artiflex IT helps you stay protected with proactive defense
+                and real-time threat response.
+              </p>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+              alt="Cybersecurity"
+              className="rounded-3xl shadow-xl"
+            />
+          </div>
+
+          {/* SECTION 3 */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1677529498680-fdb9d5ee762a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZXJuJTIwd29ya3BsYWNlfGVufDB8fDB8fHww"
+              alt="Cloud Solutions"
+              className="rounded-3xl shadow-xl"
+            />
+
+            <div>
+              <h3 className="text-3xl font-bold mb-4">
+                Cloud & Modern Workplace
+              </h3>
+
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Work smarter with cloud collaboration tools.
+                Boost productivity with Microsoft 365, Teams, OneDrive,
+                secure email, and cloud backup solutions.
+              </p>
+
+              <p className="text-gray-600 leading-relaxed">
+                Perfect for hybrid and remote teams, enabling seamless
+                communication and real-time collaboration.
+              </p>
+            </div>
+          </div>
+
+          {/* FEATURE STRIP */}
+          <div className="bg-blue-50 rounded-3xl p-14">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
+              {[
+                {
+                  title: "Smart System Optimization",
+                  desc: "Enhance stability and performance with proactive monitoring and updates.",
+                },
+                {
+                  title: "Unified IT Overview",
+                  desc: "Clear visibility of your network, devices, security, and performance.",
+                },
+                {
+                  title: "Seamless Team Support",
+                  desc: "Fast response, real-time assistance, and reliable IT management.",
+                },
+              ].map((item, i) => (
+                <div key={i}>
+                  <h4 className="text-xl font-semibold mb-2">
+                    {item.title}
+                  </h4>
+                  <p className="text-gray-600 text-sm">
+                    {item.desc}
+                  </p>
                 </div>
+              ))}
+            </div>
+          </div>
 
-                {/* MAIN CONTENT */}
-                <div className="max-w-7xl mx-auto px-6 py-24 space-y-24">
+        </div>
+      </section>
 
-                    {/*  CONTENT */}
-                    <div className="about-section grid lg:grid-cols-3 gap-16 items-center">
-
-
-                        {/* VALUES & VISIOn */}
-                        <div className="space-y-10">
-
-
-                            <div>
-                                <p className="text-blue-600 font-semibold mb-2">
-                                    Our Core Values
-                                </p>
-                                <ul className="space-y-4">
-                                    {[
-                                        "Quality Program",
-                                        "Innovation",
-                                        "Client Success",
-                                        "Teamwork",
-                                    ].map((value) => (
-                                        <li
-                                            key={value}
-                                            className="flex items-center gap-4 text-lg text-black font-medium"
-                                        >
-                                            <span className="flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-blue-600 text-sm font-bold">
-                                                ✓
-                                            </span>
-                                            {value}
-                                        </li>
-                                    ))}
-                                </ul>
-
-                            </div>
-
-                            {/* VISION */}
-                            <div className="pt-6 border-t">
-                                <p className="text-blue-600 font-semibold mb-2">
-                                    Our Vision
-                                </p>
-
-                                <p className="text-gray-600 leading-relaxed">
-                                    To be the leading provider of custom software solutions,
-                                    empowering businesses worldwide with cutting-edge technology
-                                    to achieve their strategic goals.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                        {/* IMAGE + TEXT CARD */}
-                        <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl p-10 grid md:grid-cols-2 gap-10 items-center">
-                            <div className="flex justify-center ">
-                                <BlobImage />
-                            </div>
-
-
-                            <div>
-                                <p className="text-blue-600 font-semibold mb-2">
-                                    Smart IT Solutions
-                                </p>
-
-                                <h3 className="text-3xl font-bold text-black mb-4">
-                                    Driving Business Growth Through Technology
-                                </h3>
-
-                                <p className="text-gray-600 leading-relaxed mb-4">
-                                    We pride ourselves on delivering high-quality, innovative IT
-                                    solutions that drive business growth and success.
-                                </p>
-
-                                <p className="text-gray-600 leading-relaxed">
-                                    Customer satisfaction is our top priority. We take pride in
-                                    seeing our clients succeed and being happy with the software
-                                    solutions we provide.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
-            <Footer/>
-        </>
-    )
+      <Footer />
+    </>
+  )
 }
 
 export default AboutUs
-
