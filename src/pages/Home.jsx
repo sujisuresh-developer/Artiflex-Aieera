@@ -1,38 +1,40 @@
-
-
-
-
-import Footer from "../components/Footer"
-
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 
+import Services from "./Services"
 import Industries from "../components/Industries"
+import WhyChooseUs from "../components/WhyChooseUs"
 import LogoAutoScroll from "../components/LogoAutoScroll"
 
-
-import WhyChooseUs from "../components/WhyChooseUs"
-import Services from "./Services"
+import AlternateSection from "../components/AlternateSection"
 
 const Home = () => {
   return (
     <>
-    <Header/>
-   
-     
+      <Header />
 
-    
-    
+      {/* HERO (NO CHANGE) */}
+      <Hero />
 
-    
-        <Hero />
+      {/* ALTERNATING SECTIONS */}
+      <AlternateSection index={0}>
         <Services />
+      </AlternateSection>
+
+      <AlternateSection index={1}>
         <Industries />
+      </AlternateSection>
+
+      <AlternateSection index={2}>
         <WhyChooseUs />
-        <LogoAutoScroll/>
-        <Footer/>
-    
-      
+      </AlternateSection>
+
+      <AlternateSection index={3}>
+        <LogoAutoScroll />
+      </AlternateSection>
+
+      <Footer />
     </>
   )
 }

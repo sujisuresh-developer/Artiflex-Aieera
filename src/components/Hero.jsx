@@ -1,16 +1,21 @@
 import { motion } from "framer-motion"
+import GalaxyBackground from "./GalaxyBackground"
 
 const Hero = () => {
   return (
+    
     <section
       className="relative mt-[110px] h-[calc(100vh-80px)] min-h-[650px] overflow-hidden bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://bernardmarr.com/img/The%205%20Biggest%20Cloud%20Computing%20Trends%20In%202021.jpg')",
       }}
+      
     >
+          
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/60 to-white/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-blue-800/60 to-[#fdfdfd]/30" />
+      <GalaxyBackground />
 
       {/* HERO CONTENT */}
       <div className="relative z-10 h-full flex items-center justify-center">

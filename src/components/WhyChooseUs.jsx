@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 const reasons = [
   {
     id: "01",
@@ -45,36 +47,74 @@ const WhyChooseUs = () => {
 
         {/* CARDS */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-30">
-          {reasons.map((item) => (
-            <div
-              key={item.id}
-              className={`relative rounded-[80px] pt-24 pb-10 px-6 text-center border-2 ${item.border} ${item.bg}`}
-            >
-              {/* IMAGE */}
-              <div className="absolute -top-16 left-1/2 -translate-x-1/2">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
+          {reasons.map((item, index) => {
+            const fromTop = index % 2 === 0
+            const rotateValue = fromTop ? -3 : 3
+
+            return (
+              <motion.div
+                key={item.id}
+
+                /* 👇 start position */
+                initial={{
+                  opacity: 0,
+                  y: fromTop ? -60 : 60,
+                  rotate: rotateValue,
+                }}
+
+                /* 👇 end position */
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  rotate: 0,
+                }}
+
+                /* 👇 ALWAYS animate when reached */
+                viewport={{
+                  once: false,
+                  amount: 0.1,
+                }}
+
+                transition={{
+                  delay: index * 0.10,
+                  duration: 0.8,
+                  ease: "easeOut",
+                }}
+
+                /* 👇 subtle hover lift */
+                whileHover={{
+                  y: -8,
+                  scale: 1.03,
+                }}
+
+                className={`relative rounded-[80px] pt-24 pb-10 px-6 text-center border-2 ${item.border} ${item.bg}`}
+              >
+                {/* IMAGE */}
+                <div className="absolute -top-16 left-1/2 -translate-x-1/2">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* NUMBER */}
-              <div className="mx-auto mb-4 w-10 h-10 rounded-full bg-[#fdfdfd] shadow flex items-center justify-center font-bold text-blue-600">
-                {item.id}
-              </div>
+                {/* NUMBER */}
+                <div className="mx-auto mb-4 w-10 h-10 rounded-full bg-[#fdfdfd] shadow flex items-center justify-center font-bold text-blue-600">
+                  {item.id}
+                </div>
 
-              {/* TEXT */}
-              <h3 className="text-lg font-semibold mb-3">
-                {item.title}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+                {/* TEXT */}
+                <h3 className="text-lg font-semibold mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            )
+          })}
         </div>
 
       </div>
