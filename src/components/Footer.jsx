@@ -3,7 +3,7 @@ import logo from "/logo.png"
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-blue-300 via-blue-500 to-blue-50">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-[#0A2A5A] via-[#1E40AF] to-[#38BDF8]">
 
       {/* INLINE LOGO SHAKE ANIMATION */}
       <style>{`
@@ -28,7 +28,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Artiflex IT"
-                className="h-20 mb-4"
+                className="h-20 mb-4 drop-shadow-xl"
                 style={{ animation: "logoShake 3.5s ease-in-out infinite" }}
               />
             </Link>
@@ -40,40 +40,50 @@ const Footer = () => {
 
           {/* QUICK LINKS */}
           <div className="flex flex-col gap-4 items-center md:items-start">
-            <h4 className="font-semibold text-lg mb-2">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-2 text-white">
+              Quick Links
+            </h4>
 
-            <Link to="/" className="hover:text-white transition">Home</Link>
-            <Link to="/about" className="hover:text-white transition">About</Link>
-            <Link to="/contact" className="hover:text-white transition">Contact</Link>
+            <Link to="/" className="text-blue-100 hover:text-white transition">
+              Home
+            </Link>
+            <Link to="/about" className="text-blue-100 hover:text-white transition">
+              About
+            </Link>
+            <Link to="/contact" className="text-blue-100 hover:text-white transition">
+              Contact
+            </Link>
           </div>
 
           {/* SERVICES */}
           <div className="flex flex-col gap-4 items-center md:items-start">
-            <h4 className="font-semibold text-lg mb-2">Services</h4>
+            <h4 className="font-semibold text-lg mb-2 text-white">
+              Services
+            </h4>
 
-            <Link to="/infrastructure-solutions" className="hover:text-white transition">
+            <Link to="/infrastructure-solutions" className="text-blue-100 hover:text-white transition">
               Infrastructure Solutions
             </Link>
-            <Link to="/cyber-security-solutions" className="hover:text-white transition">
+            <Link to="/cyber-security-solutions" className="text-blue-100 hover:text-white transition">
               Cyber Security
             </Link>
-            <Link to="/application-security-solutions" className="hover:text-white transition">
+            <Link to="/application-security-solutions" className="text-blue-100 hover:text-white transition">
               Application Security
             </Link>
-            <Link to="/cloud-solutions" className="hover:text-white transition">
+            <Link to="/cloud-solutions" className="text-blue-100 hover:text-white transition">
               Cloud Solutions
             </Link>
-            <Link to="/managed-services" className="hover:text-white transition">
+            <Link to="/managed-services" className="text-blue-100 hover:text-white transition">
               Managed Services
             </Link>
-            <Link to="/amc-services" className="hover:text-white transition">
+            <Link to="/amc-services" className="text-blue-100 hover:text-white transition">
               AMC Services
             </Link>
           </div>
         </div>
 
         {/* DIVIDER */}
-        <div className="my-10 h-px bg-white/30" />
+        <div className="my-10 h-px bg-white/25" />
 
         {/* COPYRIGHT */}
         <div className="text-center text-sm text-blue-100">

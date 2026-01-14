@@ -4,6 +4,18 @@
    font-family: "Dosis", sans-serif;
   
 }
+@keyframes glowMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-glowMove {
+  animation: glowMove 16s linear infinite;
+}
 
 
 

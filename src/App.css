@@ -45,6 +45,7 @@
   position: relative;
   z-index: 30;
 }
+/* contact */
 .input {
   width: 100%;
   border: 1px solid #d1d5db;
@@ -55,5 +56,6 @@
 .input:focus {
   border-color: #2563eb;
 }
+
 
 

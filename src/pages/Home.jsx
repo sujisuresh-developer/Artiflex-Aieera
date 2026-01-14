@@ -6,8 +6,8 @@ import Services from "./Services"
 import Industries from "../components/Industries"
 import WhyChooseUs from "../components/WhyChooseUs"
 import LogoAutoScroll from "../components/LogoAutoScroll"
+import TechGlowSection from "../components/TechGlowSection"
 
-import AlternateSection from "../components/AlternateSection"
 
 const Home = () => {
   return (
@@ -18,21 +18,23 @@ const Home = () => {
       <Hero />
 
       {/* ALTERNATING SECTIONS */}
-      <AlternateSection index={0}>
+      <TechGlowSection>
+     
         <Services />
-      </AlternateSection>
+      
 
-      <AlternateSection index={1}>
+     
         <Industries />
-      </AlternateSection>
+    
 
-      <AlternateSection index={2}>
+      
         <WhyChooseUs />
-      </AlternateSection>
+     
 
-      <AlternateSection index={3}>
+      
         <LogoAutoScroll />
-      </AlternateSection>
+        </TechGlowSection>
+    
 
       <Footer />
     </>

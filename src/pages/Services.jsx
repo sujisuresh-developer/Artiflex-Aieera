@@ -90,7 +90,7 @@ const Services = () => {
   const navigate = useNavigate()
 
   return (
-    <section className="bg-[#fdfdfd] py-28">
+    <section className="text-white py-28 ">
       {/* 🔹 Perspective added INLINE (no external CSS) */}
       <style>{`
         .perspective-1000 {
@@ -98,9 +98,9 @@ const Services = () => {
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 ">
         {/* SECTION TITLE */}
-        <h2 className="text-4xl font-bold text-black mb-16">
+        <h2 className="text-4xl font-bold text-white mb-16">
           Our Services
         </h2>
 

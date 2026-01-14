@@ -48,7 +48,7 @@ const cardVariants = {
 
 const Industries = () => {
   return (
-    <section className="py-28 bg-[#fdfdfd] -mt-25">
+    <section className="py-28  -mt-25">
       <div data-depth="1" className="max-w-6xl mx-auto px-6">
 
         {/* SECTION TITLE */}
@@ -57,7 +57,7 @@ const Industries = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false,margin: "-800px" }}
           transition={{ duration: 1 }}
-          className="text-3xl font-bold mb-14 text-slate-900"
+          className="text-3xl font-bold mb-14 text-white"
         >
           Industries
         </motion.h2>
