@@ -100,8 +100,8 @@ const Services = () => {
 
       <div className="max-w-7xl mx-auto px-6 ">
         {/* SECTION TITLE */}
-        <h2 className="text-4xl font-bold text-white mb-16">
-          Our Services
+        <h2 className="text-4xl font-bold text-white mb-16 text-center">
+          OUR SERVICES
         </h2>
 
         {/* SERVICES GRID */}

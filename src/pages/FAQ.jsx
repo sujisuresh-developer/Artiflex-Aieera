@@ -2,10 +2,9 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import EmojiBackground from "../components/EmojiBackground"
 
-/* BACKGROUND EMOJIS */
-const emojis = ["❓", "💡", "🔐", "☁️", "🛡️", "⚙️"]
+
+
 
 const faqData = [
   {
@@ -70,30 +69,29 @@ const FAQ = () => {
   return (
     <>
       <Header />
-      <EmojiBackground/>
 
       {/* HERO */}
       <section
-        className="relative h-[300px] flex items-center justify-center bg-cover bg-center mt-28"
+        className="relative h-[300px] flex items-center justify-center bg-cover bg-center "
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a')"
         }}
       >
         <div className="absolute inset-0 bg-blue-900/70" />
-        <h1 className="relative text-white text-5xl font-bold text-center">
+        <h1 className="relative text-white text-5xl font-bold text-center mt-10">
           Frequently Asked Questions
         </h1>
       </section>
 
       {/* FAQ SECTION */}
-      <section className="relative py-28 overflow-hidden">
+      <section className="relative py-28 overflow-hidden bg-gradient-to-br from-blue-400 via-[#fdfdfd] to-blue-500">
 
         {/* EMOJI BACKGROUND */}
         
 
         {/* WHITE SOFT OVERLAY */}
-        <div className="absolute inset-0 bg-[#fdfdfd]/90 backdrop-blur-[1px]" />
+        <div className="absolute inset-0  backdrop-blur-[1px]" />
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 space-y-28">

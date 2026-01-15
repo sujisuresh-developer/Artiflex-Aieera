@@ -4,7 +4,7 @@ const ServicePageWrapper = ({ children }) => {
     <section className="relative min-h-screen overflow-hidden">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#f6f9ff] via-[#ffffff] to-[#eef3ff]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-[#fdfdfd] to-blue-500" />
 
       {/* SUBTLE GRID / TECH TEXTURE */}
       <div

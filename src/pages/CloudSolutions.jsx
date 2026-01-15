@@ -14,7 +14,7 @@ const CloudSolutions = () => {
 
         {/* HERO SECTION */}
         <section
-          className="relative h-[420px] flex items-center bg-cover bg-center"
+          className="relative h-[420px] flex items-center bg-cover bg-center -mt-28"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')",
@@ -48,7 +48,7 @@ const CloudSolutions = () => {
               {/* STAR BORDER IMAGE */}
               <div className="star-border">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJi_wBBbgA8wXrx24RYO5vPbHtStZUMJCdfg&s"
+                  src="https://www.computersciencedegreehub.com/wp-content/uploads/2022/06/cloud-computing.jpg"
                   alt="Cloud Solutions"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd] w-full"
                 />

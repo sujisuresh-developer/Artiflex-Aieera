@@ -82,7 +82,7 @@ const ApplicationSecuritySolutions = () => {
             </div>
 
             {/* SDLC SECTION */}
-            <div className="bg-blue-50 rounded-2xl p-12">
+            <div className="bg-blue-50 rounded-2xl p-12 bg-gradient-to-br from-blue-400 via-[#fdfdfd] to-blue-500">
               <h3 className="text-3xl font-bold mb-6">
                 Security Embedded in the Development Lifecycle
               </h3>

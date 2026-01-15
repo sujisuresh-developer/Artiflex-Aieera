@@ -14,7 +14,7 @@ const CyberSecuritySolutions = () => {
 
         {/* HERO */}
         <section
-          className="relative h-[420px] flex items-center bg-cover bg-center"
+          className="relative h-[420px] flex items-center bg-cover bg-center -mt-28"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b')",

@@ -17,7 +17,7 @@ const Home = () => {
       {/* HERO (NO CHANGE) */}
       <Hero />
 
-      {/* ALTERNATING SECTIONS */}
+      {/* techglow for that home page bg. */}
       <TechGlowSection>
      
         <Services />

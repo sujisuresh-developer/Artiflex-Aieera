@@ -81,11 +81,7 @@ const WhyChooseUs = () => {
                   ease: "easeOut",
                 }}
 
-                /* 👇 subtle hover lift */
-                whileHover={{
-                  y: -8,
-                  scale: 1.03,
-                }}
+                
 
                 className={`relative rounded-[80px] pt-24 pb-10 px-6 text-center border-2 ${item.border} ${item.bg}`}
               >

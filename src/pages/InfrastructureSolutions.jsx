@@ -11,7 +11,7 @@ const InfrastructureSolutions = () => {
 
         {/* HERO */}
         <section
-          className="relative h-[420px] bg-cover bg-center flex items-center mt-28"
+          className="relative h-[420px] bg-cover bg-center flex items-center  "
           style={{
             backgroundImage:
               "url('https://png.pngtree.com/thumb_back/fh260/background/20241210/pngtree-person-engaging-with-a-cloud-computing-diagram-explaining-cloud-based-solutions-image_16678313.jpg')",
@@ -21,7 +21,7 @@ const InfrastructureSolutions = () => {
           <div className="absolute inset-0 bg-blue-900/70" />
 
           {/* Hero Content */}
-          <div className="relative max-w-7xl mx-auto px-6 text-white">
+          <div className="relative max-w-7xl mx-auto px-6 text-white text-center">
             <h1 className="text-5xl font-bold mb-4">
               Infrastructure Solutions
             </h1>
@@ -66,7 +66,7 @@ const InfrastructureSolutions = () => {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4 text-center">
                   IT Infrastructure Management
                 </h3>
                 <p className="text-gray-600 mb-4">

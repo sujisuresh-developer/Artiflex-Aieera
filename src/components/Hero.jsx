@@ -1,55 +1,97 @@
 import { motion } from "framer-motion"
-import TechWaveBackground from "./TechWaveBackground "
-
+import DarkVeil from "./DarkVeil"
 
 const Hero = () => {
   return (
-    <section className="relative mt-[110px] min-h-screen overflow-hidden bg-[#050E1F]">
+    <section className="relative min-h-screen overflow-hidden">
 
-      {/* TECH WAVE BACKGROUND */}
-      <TechWaveBackground />
+      {/* BACKGROUND */}
+      <DarkVeil />
 
-      {/* GRADIENT OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#050E1F]/90 via-[#0A2A5A]/70 to-[#0D3B66]/50" />
-
-      {/* CENTERED CONTENT */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center px-6 text-center">
+      {/* CONTENT */}
+      <div className="relative z-20 min-h-screen flex items-center justify-center px-6 text-center">
 
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: "easeOut" }}
-          className="max-w-4xl text-white"
+          className="max-w-5xl"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+
+          {/* HEADING */}
+          <motion.h1
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1.1, ease: "easeOut" },
+              },
+            }}
+            className="text-4xl md:text-6xl font-bold leading-tight mt-24 text-slate-900"
+          >
             The all-in-one IT solution to turn
             <br />
-            <span className="text-blue-400">
+            <span className="text-blue-600">
               infrastructure into uptime
             </span>
-          </h1>
+          </motion.h1>
 
-          <p className="mt-6 text-lg md:text-xl text-blue-100">
+          {/* PARAGRAPH */}
+          <motion.p
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.9, ease: "easeOut" },
+              },
+            }}
+            className="mt-6 text-lg md:text-xl text-slate-700"
+          >
             Powering businesses with secure, scalable, and reliable
             technology foundations.
-          </p>
+          </motion.p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          {/* TAGS */}
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.8, ease: "easeOut" },
+              },
+            }}
+            className="mt-10 flex flex-wrap justify-center gap-4"
+          >
             {[
-              "🔐 Secure. Scalable. Reliable.",
-              "⚡ Faster support. Stronger systems.",
-              "🌐 Connect. Protect. Perform.",
+              "Connect.",
+              "Protect.",
+              "Perform.",
             ].map((item) => (
               <span
                 key={item}
-                className="px-6 py-2 rounded-full bg-blue-500/10 border border-blue-400/20 backdrop-blur-md text-sm md:text-base"
+                className="
+                  px-6 py-2 rounded-full
+                  bg-white/60 backdrop-blur-md
+                  border border-blue-200
+                  text-slate-800 text-sm md:text-base
+                "
               >
                 {item}
               </span>
             ))}
-          </div>
-        </motion.div>
+          </motion.div>
 
+        </motion.div>
       </div>
     </section>
   )

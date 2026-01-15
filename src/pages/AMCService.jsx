@@ -14,7 +14,7 @@ const AMCServices = () => {
 
         {/* HERO SECTION */}
         <section
-          className="relative h-[420px] flex items-center bg-cover bg-center"
+          className="relative h-[420px] flex items-center bg-cover bg-center -mt-28"
           style={{
             backgroundImage:
               "url('https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aXQlMjBzb2x1dGlvbnxlbnwwfHwwfHx8MA%3D%3D')",

@@ -56,24 +56,32 @@ const AboutUs = () => {
     <>
       <Header />
 
-      <section className="relative bg-[#fdfdfd] min-h-screen mt-[110px] overflow-hidden">
+      <section className="relative bg-[#fdfdfd] min-h-screen  overflow-hidden">
 
-        {/* 🔹 BULGED VERTICAL BACKGROUND */}
-        <div className="absolute inset-0 z-0 grid grid-cols-6 pointer-events-none">
-          <div className="bg-gradient-to-b from-blue-100 via-blue-50 to-blue-100 shadow-inner" />
-          <div className="bg-gradient-to-b from-white via-slate-50 to-white" />
-          <div className="bg-gradient-to-b from-blue-50 via-blue-100 to-blue-50 shadow-inner" />
-          <div className="bg-gradient-to-b from-white via-slate-50 to-white" />
-          <div className="bg-gradient-to-b from-blue-100 via-blue-50 to-blue-100 shadow-inner" />
-          <div className="bg-gradient-to-b from-white via-slate-50 to-white" />
+
+
+        {/* ANIMATED GRADIENT BACKGROUND */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* BASE GRADIENT */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200" />
+
+          {/* MOVING DARK BLUE FLOW */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(37,99,235,0.25),transparent_60%)] animate-gradientMoveSlow" />
+
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(30,64,175,0.25),transparent_65%)] animate-gradientMoveReverse" />
+
+          {/* DEPTH OVERLAY */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-blue-200/40" />
         </div>
+
+
 
         {/* 🔹 HERO */}
         <div
           className="relative z-10 h-[360px] flex items-center justify-center bg-center bg-cover w-full"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')",
+              "url('https://cdn.prod.website-files.com/64db80a5e88c6b1723ff760b/652800c61d16d3b50d4aed7c_Our%20mission%20-%20inside%20page%20(1).webp')",
           }}
         >
           <div className="absolute inset-0 bg-blue-900/70" />
@@ -262,7 +270,7 @@ const AboutUs = () => {
 
 
           {/* FEATURE STRIP */}
-          <div className="bg-blue-50 rounded-3xl p-14 shadow-inner">
+          <div className="bg-blue-50 rounded-3xl p-14 shadow-inner bg-gradient-to-br from-blue-500 via-white to-blue-500">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
               {[
                 {

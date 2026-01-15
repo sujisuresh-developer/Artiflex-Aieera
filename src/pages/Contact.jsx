@@ -9,7 +9,7 @@ const Contact = () => {
 
       {/* HERO WITH CURVED BOTTOM */}
       <section
-        className="relative h-[380px] bg-cover bg-center mt-[111px] rounded-b-[80px] "
+        className="relative h-[380px] bg-cover bg-center  rounded-b-[80px] "
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')",
@@ -31,10 +31,10 @@ const Contact = () => {
       <section className="-mt-32 relative z-10">
         <div className="max-w-6xl mx-auto px-6 ">
 
-          <div className="bg-white rounded-3xl shadow-2xl p-10 grid lg:grid-cols-2 gap-14 ">
+          <div className="bg-[#fdfdfd] rounded-3xl shadow-2xl p-10 grid lg:grid-cols-2 gap-14 ">
 
             {/* LEFT INFO */}
-            <div className="space-y-8 bg-blue-50">
+            <div className="space-y-8 ">
               <h3 className="text-2xl font-bold">Get in touch</h3>
 
               <p className="text-gray-600">
@@ -44,7 +44,7 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center">
                     📍
                   </div>
                   <div>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center">
                     ✉️
                   </div>
                   <div>
@@ -66,7 +66,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center">
                     📞
                   </div>
                   <div>
@@ -118,8 +118,8 @@ const Contact = () => {
 
       {/* MAP */}
       <section className="mt-10 my-10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-3xl overflow-hidden shadow-xl">
+        <div className="max-w-7xl mx-auto px-20">
+          <div className="rounded-3xl overflow-hidden shadow-xl  ">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1008235.2584495674!2d54.98082236296497!3d25.151013473462484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1768275535395!5m2!1sen!2sin"
               className="w-full h-[420px] border-0"

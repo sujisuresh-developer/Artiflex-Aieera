@@ -2,40 +2,45 @@ const TechGlowSection = ({ children }) => {
   return (
     <section className="relative overflow-hidden mt-10">
 
-      {/* TECH GLOW BACKGROUND */}
-      <div className="absolute inset-0 bg-[#0A2A5A]">
+      {/* LIGHT HERO-MATCHED BACKGROUND */}
+      <div className="absolute inset-0">
 
-        {/* TECH GRID (SUBTLE) */}
+        {/* BASE SOFT GRADIENT (MATCH HERO) */}
+        <div className="absolute inset-0 bg-gradient-to-br 
+          from-white 
+          via-blue-50 
+          to-blue-200 
+        " />
+
+        {/* FLOWING COLOR WASH */}
         <div
-          className="absolute inset-0 opacity-40"
+          className="absolute inset-0 opacity-70"
           style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(56,189,248,0.35) 1px, transparent 1px), linear-gradient(to bottom, rgba(56,189,248,0.35) 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
+            background:
+              "radial-gradient(circle at 30% 20%, rgba(96,165,250,0.35), transparent 55%), radial-gradient(circle at 70% 70%, rgba(59,130,246,0.35), transparent 55%)",
           }}
         />
 
-        {/* SOFT RADIAL GLOW (LOGO ACCENT) */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_25%,rgba(56,189,248,0.45),transparent_65%)]" />
+        {/* VERY SUBTLE GRID (OPTIONAL TECH FEEL) */}
 
-        {/* MOVING HORIZONTAL GLOW LINE */}
+
+        {/* SLOW MOVING LIGHT BAND */}
         <div className="absolute inset-0 overflow-hidden">
           <div
             className="
-              absolute top-0 left-[-100%] 
+              absolute top-0 left-[-100%]
               w-[200%] h-full
-              bg-gradient-to-r 
-              from-transparent 
-              via-[#38BDF8]/40 
+              bg-gradient-to-r
+              from-transparent
+              via-blue-300/30
               to-transparent
-              animate-glowMove
+              animate-glowMoveSlow
             "
           />
         </div>
 
-        {/* SUBTLE DARK GRADIENT DEPTH */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0A2A5A]/60 to-[#0A2A5A]" />
-
+        {/* SOFT DEPTH FADE */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-300 via-blue-200 to-blue-500" />
       </div>
 
       {/* CONTENT */}
