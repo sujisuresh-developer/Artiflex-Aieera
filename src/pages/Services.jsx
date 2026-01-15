@@ -58,54 +58,38 @@ const services = [
   },
 ]
 
-/* 🔥 SLOW ROW-BY-ROW 3D FLIP VARIANTS */
+/* ✅ OPTIMIZED ANIMATION */
 const cardVariants = {
   hidden: {
     opacity: 0,
-    rotateY: -90,
-    rotateX: 18,
-    y: 80,
-    scale: 0.88,
+    y: 40,
+    scale: 0.96,
   },
-  visible: (index) => {
-    const columns = 3
-    const row = Math.floor(index / columns)
-
-    return {
-      opacity: 1,
-      rotateY: 0,
-      rotateX: 0,
-      y: 0,
-      scale: 1,
-      transition: {
-        delay: row * 0.9 + (index % columns) * 0.15, // 👈 row first
-        duration: 1.3, // 👈 slow & visible
-        ease: "easeOut",
-      },
-    }
-  },
+  visible: (index) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      delay: index * 0.12,
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  }),
 }
 
 const Services = () => {
   const navigate = useNavigate()
 
   return (
-    <section className="text-white py-28 ">
-      {/* 🔹 Perspective added INLINE (no external CSS) */}
-      <style>{`
-        .perspective-1000 {
-          perspective: 1000px;
-        }
-      `}</style>
-
-      <div className="max-w-7xl mx-auto px-6 ">
-        {/* SECTION TITLE */}
-        <h2 className="text-4xl font-bold text-white mb-16 text-center">
+    <section className="py-28 bg-transparent">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* TITLE */}
+        <h2 className="text-4xl font-bold text-center text-white mb-16">
           OUR SERVICES
         </h2>
 
-        {/* SERVICES GRID */}
-        <div className="grid md:grid-cols-3 gap-8 perspective-1000">
+        {/* GRID → 3 CARDS CENTERED */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {services.map((service, index) => (
             <motion.div
               key={service.slug}
@@ -113,40 +97,36 @@ const Services = () => {
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: false, amount: 0.25 }}
+              viewport={{ once: true, amount: 0.3 }}
 
               whileHover={{
-                rotateY: 8,
-                rotateX: -6,
-                y: -14,
-                scale: 1.04,
+                y: -10,
+                scale: 1.03,
               }}
 
               transition={{
-                type: "spring",
-                stiffness: 120,
-                damping: 18,
+                duration: 0.25,
+                ease: "easeOut",
               }}
 
               onClick={() => navigate(`/services/${service.slug}`)}
               className="
                 cursor-pointer
                 bg-white
-                border border-gray-200
+                border border-slate-200
                 rounded-xl
                 overflow-hidden
-                shadow-sm
-                hover:shadow-2xl
-                hover:border-blue-600
-                transform-gpu
-                transition-all
+                shadow-md
+                hover:shadow-xl
+                transition
               "
             >
               {/* IMAGE */}
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-44 object-cover"
+                loading="lazy"
+                className="w-full h-40 object-cover"
               />
 
               {/* CONTENT */}
@@ -155,17 +135,13 @@ const Services = () => {
                   {service.subtitle}
                 </p>
 
-                <h3 className="text-xl font-semibold text-black mb-4">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {service.description}
                 </p>
-
-                <span className="text-blue-600 text-xl font-bold">
-                  →
-                </span>
               </div>
             </motion.div>
           ))}
