@@ -183,8 +183,15 @@ const AboutUs = () => {
               <h3 className="text-3xl font-bold mb-4">
                 IT Infrastructure Management
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 -mt-5">
                 Build a reliable IT foundation for smooth operations.
+              </p>
+              <p className="flex justify-items align-items mt-5">
+                In today’s digital-first landscape, your IT infrastructure is the backbone of your business. 
+                We provide end-to-end management of your technology environment, ensuring that your systems 
+                are not just operational, but optimized for performance, security, and growth. 
+                By proactively monitoring and maintaining your assets, we minimize downtime and 
+                let you focus on your core business goals.
               </p>
             </motion.div>
           </div>
@@ -195,8 +202,13 @@ const AboutUs = () => {
               <h3 className="text-3xl font-bold mb-4">
                 Cybersecurity & Protection
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 -mt-5">
                 Safeguard your business from modern threats.
+              </p>
+              <p className=" flex justify-items align-items mt-5">
+                In an era where cyber attacks are becoming more sophisticated and frequent, a reactive approach to security is no longer sufficient.
+                We provide a comprehensive, multi-layered defense strategy designed to anticipate, detect, and neutralize threats before they impact your operations.
+                Our goal is to protect your critical assets, customer data, and brand reputation, giving you the confidence to innovate without fear.
               </p>
             </motion.div>
             <motion.img
@@ -219,10 +231,14 @@ const AboutUs = () => {
             />
             <motion.div variants={textRight} initial="hidden" whileInView="visible">
               <h3 className="text-3xl font-bold mb-4">
-                Cloud & Modern Workplace
+                Smart IT Solutions
               </h3>
-              <p className="text-gray-600">
-                Enable seamless collaboration and productivity.
+              <p className="text-gray-600 -mt-5">
+                Next-Gen IT for the Modern Enterprise.
+              </p>
+              <p className=" flex justify-items align-items mt-5">
+                We create custom IT solutions designed to align with your unique business needs, ensuring efficiency, scalability, and security. 
+                You gain a dedicated technology partner committed to understanding your requirements and delivering secure, future-ready solutions.
               </p>
             </motion.div>
           </div>
