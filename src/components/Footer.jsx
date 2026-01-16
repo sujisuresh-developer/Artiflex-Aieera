@@ -3,7 +3,7 @@ import logo from "/logo.png"
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-[#0A2A5A] via-[#1E40AF] to-[#38BDF8]">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-[#0A2A5A]/30 via-[#1E40AF] to-[#38BDF8]">
 
       {/* INLINE LOGO SHAKE ANIMATION */}
       <style>{`
@@ -28,7 +28,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Artiflex IT"
-                className="h-20 mb-4 drop-shadow-xl"
+                className="h-20 mb-4 drop-shadow-xl "
                 style={{ animation: "logoShake 3.5s ease-in-out infinite" }}
               />
             </Link>
