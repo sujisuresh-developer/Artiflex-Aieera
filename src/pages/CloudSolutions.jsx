@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ServicePageWrapper from "../components/ServicePageWrapper"
+import serv4 from "../assets/service4.jpg"
 
 const CloudSolutions = () => {
   return (
@@ -48,7 +49,7 @@ const CloudSolutions = () => {
               {/* STAR BORDER IMAGE */}
               <div className="star-border">
                 <img
-                  src="https://www.computersciencedegreehub.com/wp-content/uploads/2022/06/cloud-computing.jpg"
+                  src={serv4}
                   alt="Cloud Solutions"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd] w-full"
                 />

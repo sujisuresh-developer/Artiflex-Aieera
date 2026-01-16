@@ -2,6 +2,12 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { useState } from "react"
 import { motion } from "framer-motion"
+import infra from "../assets/infra.jpg"
+import cyber from "../assets/cyber.jpg"
+import appli from "../assets/appli.jpg"
+import cloud from "../assets/cloud.jpg"
+import manage from "../assets/manage.jpg"
+import amc from "../assets/amc.jpg"
 
 
 
@@ -9,7 +15,8 @@ import { motion } from "framer-motion"
 const faqData = [
   {
     title: "IT Infrastructure Optimization",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: infra
+    ,
     desc: "Optimizing your IT infrastructure is key to ensuring seamless business operations.",
     faqs: [
       { q: "Why is infrastructure optimization important?", a: "It improves performance, enhances security, and minimizes downtime." },
@@ -18,7 +25,7 @@ const faqData = [
   },
   {
     title: "Cyber Security Solutions",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    image: cyber,
     desc: "Cyber threats are constantly evolving—your defense strategy should too.",
     faqs: [
       { q: "How do Cyber Security Solutions protect my business?", a: "By identifying vulnerabilities, monitoring threats in real time, and implementing proactive controls." },
@@ -27,7 +34,7 @@ const faqData = [
   },
   {
     title: "Application Security",
-    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7",
+    image: appli,
     desc: "Applications are critical assets but also prime targets for cyber threats.",
     faqs: [
       { q: "How do you secure applications throughout development?", a: "We embed security into the development lifecycle using secure coding, testing, and monitoring." },
@@ -36,7 +43,7 @@ const faqData = [
   },
   {
     title: "Cloud Solutions",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    image: cloud,
     desc: "The cloud is the future—make the most of it with secure and scalable solutions.",
     faqs: [
       { q: "Do you support cloud migration?", a: "Yes, with complete migration and optimization services." },
@@ -45,7 +52,7 @@ const faqData = [
   },
   {
     title: "Managed Services",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    image: manage,
     desc: "Expert guidance is essential for strategic growth and IT stability.",
     faqs: [
       { q: "How do Managed Services help growth?", a: "Through continuous IT oversight, planning, and expert support." },
@@ -54,7 +61,7 @@ const faqData = [
   },
   {
     title: "AMC Services",
-    image: "https://plus.unsplash.com/premium_photo-1683134444181-c3c5714dd876",
+    image: amc,
     desc: "Comprehensive IT support and maintenance to ensure business continuity.",
     faqs: [
       { q: "What does AMC include?", a: "Monitoring, maintenance, updates, and disaster recovery." },

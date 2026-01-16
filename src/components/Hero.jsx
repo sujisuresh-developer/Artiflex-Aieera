@@ -37,7 +37,7 @@ const Hero = () => {
             }}
             className="text-4xl md:text-6xl font-bold leading-tight mt-24 text-slate-900"
           >
-            The all-in-one IT solution to turn
+            The all in one IT solution to turn
             <br />
             <span className="text-blue-600">
               infrastructure into uptime
@@ -73,9 +73,9 @@ const Hero = () => {
             className="mt-10 flex flex-wrap justify-center gap-4"
           >
             {[
-              "Connect.",
-              "Protect.",
-              "Perform.",
+              "Innovate.",
+              "Secure.",
+              "Transform.",
             ].map((item) => (
               <span
                 key={item}

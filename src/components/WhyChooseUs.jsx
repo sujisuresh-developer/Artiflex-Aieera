@@ -1,11 +1,16 @@
 import { motion } from "framer-motion"
+import about1 from "../assets/about1.jpeg"
+import about2 from "../assets/about2.jpeg"
+import about3 from "../assets/about3.jpeg"
+import about4 from "../assets/about4.jpeg"
+
 
 const reasons = [
   {
     id: "01",
     title: "Custom IT Solutions",
     desc: "We develop custom IT solutions tailored to your unique business needs, ensuring efficiency, scalability, and security at every stage.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    image: about1,
     bg: "bg-blue-100",
     border: "border-blue-400",
   },
@@ -13,7 +18,7 @@ const reasons = [
     id: "02",
     title: "Reliable Daily Operations",
     desc: "Our approach focuses on building reliable systems that support daily operations while minimizing downtime and disruptions.",
-    image: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
+    image: about2,
     bg: "bg-indigo-100",
     border: "border-indigo-400",
   },
@@ -21,7 +26,7 @@ const reasons = [
     id: "03",
     title: "Future-Ready Systems",
     desc: "We prepare your IT environment for future growth by designing scalable, secure, and adaptable technology foundations.",
-    image: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657",
+    image: about3,
     bg: "bg-cyan-100",
     border: "border-cyan-400",
   },
@@ -29,7 +34,7 @@ const reasons = [
     id: "04",
     title: "Trusted Technology Partner",
     desc: "By choosing Artiflex IT, you gain a dedicated technology partner committed to understanding your challenges and delivering solutions that truly fit.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+    image: about4,
     bg: "bg-emerald-100",
     border: "border-emerald-400",
   },
@@ -71,13 +76,13 @@ const WhyChooseUs = () => {
 
                 /* 👇 ALWAYS animate when reached */
                 viewport={{
-                  once: false,
+                  once: true,
                   amount: 0.1,
                 }}
 
                 transition={{
-                  delay: index * 0.10,
-                  duration: 0.8,
+                  delay: index * 0.2,
+                  duration: 1,
                   ease: "easeOut",
                 }}
 

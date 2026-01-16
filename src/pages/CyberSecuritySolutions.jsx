@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ServicePageWrapper from "../components/ServicePageWrapper"
+import serv2 from "../assets/service2.jpeg"
 
 const CyberSecuritySolutions = () => {
   return (
@@ -54,7 +55,7 @@ const CyberSecuritySolutions = () => {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="star-border">
                 <img
-                  src="https://images.unsplash.com/photo-1563986768609-322da13575f3"
+                  src={serv2}
                   alt="Cyber Security"
                   className="rounded-2xl shadow-xl relative z-10 bg-[#fdfdfd]"
                 />

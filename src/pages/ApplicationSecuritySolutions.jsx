@@ -1,6 +1,8 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ServicePageWrapper from "../components/ServicePageWrapper"
+import serv3 from "../assets/appli1.jpg"
+import applic from "../assets/service3.jpeg"
 
 const ApplicationSecuritySolutions = () => {
   return (
@@ -14,7 +16,7 @@ const ApplicationSecuritySolutions = () => {
 
         {/* HERO SECTION */}
         <section
-          className="relative h-[420px] flex items-center bg-cover bg-center"
+          className="relative h-[420px] flex items-center bg-cover bg-center -mt-28"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1531498860502-7c67cf02f657')",
@@ -61,7 +63,7 @@ const ApplicationSecuritySolutions = () => {
               {/* STAR BORDER IMAGE */}
               <div className="star-border">
                 <img
-                  src="https://img.freepik.com/premium-photo/cyber-security-digital-data-protection-concept-uds_31965-346120.jpg?semt=ais_hybrid&w=740&q=80"
+                  src={serv3}
                   alt="Application Security"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd]"
                 />
@@ -130,7 +132,7 @@ const ApplicationSecuritySolutions = () => {
 
               <div className="star-border">
                 <img
-                  src="https://images.unsplash.com/photo-1600267175161-cfaa711b4a81"
+                  src={applic}
                   alt="Compliance"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd]"
                 />

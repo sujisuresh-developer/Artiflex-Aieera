@@ -17,7 +17,7 @@
   animation: glowMoveSlow 25s linear infinite;
 }
 
-/* HORIZONTAL BLUE SCROLLBAR */
+/* HORIZONTAL BLUE SCROLLBAR
 .industries-scroll::-webkit-scrollbar {
   height: 6px;
 }
@@ -41,13 +41,18 @@
     #1d4ed8,
     #0ea5e9
   );
+} */
+
+/* HIDE HORIZONTAL SCROLLBAR – KEEP SCROLLING */
+.industries-scroll {
+  -ms-overflow-style: none;   /* IE & Edge */
+  scrollbar-width: none;      /* Firefox */
 }
 
-/* Firefox */
-.industries-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: #0429d05d transparent;
+.industries-scroll::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
 }
+
 
 /* about bg */
 @keyframes gradientMoveSlow {

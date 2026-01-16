@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ServicePageWrapper from "../components/ServicePageWrapper"
+import serv5 from "../assets/service5.jpg"
 
 const ManagedServices = () => {
   return (
@@ -49,7 +50,7 @@ const ManagedServices = () => {
               {/* STAR BORDER IMAGE */}
               <div className="star-border">
                 <img
-                  src="https://images.unsplash.com/photo-1600267175161-cfaa711b4a81"
+                  src={serv5}
                   alt="Managed IT Services"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd]"
                 />

@@ -1,6 +1,7 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ServicePageWrapper from "../components/ServicePageWrapper"
+import serv6 from "../assets/service6.jpg"
 
 const AMCServices = () => {
   return (
@@ -50,7 +51,7 @@ const AMCServices = () => {
               {/* STAR BORDER IMAGE */}
               <div className="star-border">
                 <img
-                  src="https://images.unsplash.com/photo-1521791055366-0d553872125f"
+                  src={serv6}
                   alt="AMC Services"
                   className="relative z-10 rounded-2xl shadow-xl bg-[#fdfdfd]"
                 />
