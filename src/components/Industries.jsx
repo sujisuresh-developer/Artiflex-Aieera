@@ -6,6 +6,8 @@ import fintech from "../assets/fintech.jpg"
 import health from "../assets/health.jpg"
 import manufact from "../assets/manufact.jpg"
 import retail from "../assets/retail.jpg"
+import educ from "../assets/educ.jpg"
+import start from "../assets/start.jpg"
 
 const industries = [
   { title: "Energy", desc: "Secure and scalable IT infrastructure supporting energy production and monitoring.", img: energy },
@@ -13,6 +15,10 @@ const industries = [
   { title: "Healthcare", desc: "Reliable IT ensuring patient data protection and system stability.", img: health },
   { title: "Manufacturing", desc: "Technology solutions enhancing automation and production workflows.", img: manufact },
   { title: "Retail & E-Commerce", desc: "Scalable cloud systems enabling seamless digital commerce.", img: retail },
+   { title: "Government & Education", desc: "Improve outcomes for children and families, and strengthen digital infrastructure.", img: educ },
+    { title: "Startups & SMEs", desc: "Securing funding and ensuring business success.", img: start },
+
+
 ]
 
 /* 🔒 YOUR ORIGINAL ANIMATION – UNCHANGED */

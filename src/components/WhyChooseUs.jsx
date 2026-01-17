@@ -8,32 +8,30 @@ import about4 from "../assets/about4.jpeg"
 const reasons = [
   {
     id: "01",
-    title: "Custom IT Solutions",
-    desc: "We develop custom IT solutions tailored to your unique business needs, ensuring efficiency, scalability, and security at every stage.",
+   
+    desc: "Over 15 Years of Experience in delivering enterprise IT solutions.",
     image: about1,
     bg: "bg-blue-100",
     border: "border-blue-400",
   },
   {
     id: "02",
-    title: "Reliable Daily Operations",
-    desc: "Our approach focuses on building reliable systems that support daily operations while minimizing downtime and disruptions.",
+    desc: "Certified Security Experts and ethical hackers.supportGlobal Reach with presence in multiple countries.",
     image: about2,
     bg: "bg-indigo-100",
     border: "border-indigo-400",
   },
   {
     id: "03",
-    title: "Future-Ready Systems",
-    desc: "We prepare your IT environment for future growth by designing scalable, secure, and adaptable technology foundations.",
+   
+    desc: "Customized IT Strategy tailored to your business.",
     image: about3,
     bg: "bg-cyan-100",
     border: "border-cyan-400",
   },
   {
     id: "04",
-    title: "Trusted Technology Partner",
-    desc: "By choosing Artiflex IT, you gain a dedicated technology partner committed to understanding your challenges and delivering solutions that truly fit.",
+    desc: "End to End Project Delivery from design to deployment. ",
     image: about4,
     bg: "bg-emerald-100",
     border: "border-emerald-400",
@@ -107,10 +105,8 @@ const WhyChooseUs = () => {
                 </div>
 
                 {/* TEXT */}
-                <h3 className="text-lg font-semibold mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+               
+                <p className="text-sm text-gray-900 leading-relaxed ">
                   {item.desc}
                 </p>
               </motion.div>

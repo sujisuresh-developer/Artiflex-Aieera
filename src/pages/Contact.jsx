@@ -50,7 +50,8 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold">Office</p>
                     <p className="text-gray-600">
-                      Artiflex IT Solutions, Dubai
+                      Office 264-1, Al Quoz Industrial Area,
+                      Dubai, UAE
                     </p>
                   </div>
                 </div>
@@ -71,7 +72,17 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Call Us</p>
-                    <p className="text-gray-600">+971 54 545 8167</p>
+                    <p className="text-gray-600">+971 56 476 6585</p>
+                  </div>
+                </div>
+                 <div className="flex gap-4">
+                  <div className="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center">
+                    <img src=" https://cdn-icons-png.flaticon.com/128/10453/10453141.png"/>
+                   
+                  </div>
+                  <div>
+                    <p className="font-semibold">Website</p>
+                    <p className="text-gray-600">www.artiflexit.com</p>
                   </div>
                 </div>
               </div>

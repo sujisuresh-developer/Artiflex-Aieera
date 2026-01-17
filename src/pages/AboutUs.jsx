@@ -11,6 +11,8 @@ import ab4 from "../assets/about4.jpeg"
 import infra1 from "../assets/infra1.jpg"
 import cyber1 from "../assets/cyber1.jpg"
 import cloud1 from "../assets/cloud1.jpg"
+import consult from "../assets/consult.jpg"
+import customer from "../assets/customer.jpg"
 
 /* ================= DATA ================= */
 
@@ -96,13 +98,115 @@ const AboutUs = () => {
               We make sure your IT works for you
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              We develop custom IT solutions tailored to your unique business needs,
-              ensuring efficiency, scalability, and security at every stage.
+              At Artiflex, we are committed to delivering high quality, innovative
+              IT solutions that fuel business growth and long-term success. With
+              over 15 years of industry experience, we have established
+              ourselves as a trusted technology partner to organizations around
+              the world.
             </p>
             <p className="mt-4 text-gray-600 leading-relaxed">
-              By choosing Artiflex IT, you gain a dedicated technology partner.
+              We specialize in crafting custom software and IT solutions tailored
+              to meet the unique needs of each client. Our focus on efficiency,
+              scalability, and security ensures that your technology is not only
+              robust today but ready for the future.
             </p>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              Backed by a team of 20+ certified full time professionals, we have
+              successfully completed over 500 projects across various
+              industries. Our global presence, with offices in four countries,
+              allows us to support clients with agility and local insight.
+            </p>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              We operate multiple branches across the region, including Manchi
+              in Oman, Metal World in Saudi Arabia, and our Dubai branch, now
+              operating as Artiflex Information Technology.
+            </p>
+
+
           </div>
+
+          {/* ================= VISION & MISSION ================= */}
+          <div className="max-w-5xl mx-auto text-center space-y-12">
+
+            {/* OUR VISION */}
+            <div>
+              <h3 className="text-3xl font-bold mb-4 text-blue-900">
+                Our Vision
+              </h3>
+              <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Empowering businesses with trust through cyber resilience.
+              </p>
+            </div>
+
+            {/* OUR MISSION */}
+            <div>
+              <h3 className="text-3xl font-bold mb-4 text-blue-900">
+                Our Mission
+              </h3>
+              <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                To deliver customized, secure, and scalable IT solutions that empower
+                industries from energy to fintech to operate efficiently and grow
+                confidently.
+              </p>
+            </div>
+
+          </div>
+
+          {/* ================= CORE VALUES ================= */}
+          <div className="max-w-6xl mx-auto mt-20">
+            <h3 className="text-3xl font-bold text-center mb-12 text-blue-900">
+              Our Core Values
+            </h3>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              {/* VALUE 1 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-200 bg-gradient-to-br from-blue-900 via-[#fdfdfd] to-blue-800">
+                <h4 className="text-xl font-semibold mb-3 text-blue-700">
+                  Client Success
+                </h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We prioritize understanding our clients’ goals and delivering solutions
+                  that ensure measurable success.
+                </p>
+              </div>
+
+              {/* VALUE 2 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-200 bg-gradient-to-br from-blue-900 via-[#fdfdfd] to-blue-800">
+                <h4 className="text-xl font-semibold mb-3 text-blue-700">
+                  Innovation
+                </h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We embrace the latest technologies and approaches to keep our solutions
+                  forward-thinking and effective.
+                </p>
+              </div>
+
+              {/* VALUE 3 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-200 bg-gradient-to-br from-blue-900 via-[#fdfdfd] to-blue-800">
+                <h4 className="text-xl font-semibold mb-3 text-blue-700">
+                  Quality Program
+                </h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Every project we undertake is driven by a strong commitment to quality
+                  and continuous improvement.
+                </p>
+              </div>
+
+              {/* VALUE 4 */}
+              <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-200 bg-gradient-to-br from-blue-900 via-[#fdfdfd] to-blue-800">
+                <h4 className="text-xl font-semibold mb-3 text-blue-700">
+                  Teamwork
+                </h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Collaboration and mutual respect guide how we work with our clients and
+                  within our teams.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
 
           {/* ================= STACKED IMAGE SECTION (FIXED ONLY HERE) ================= */}
           <div
@@ -187,11 +291,11 @@ const AboutUs = () => {
                 Build a reliable IT foundation for smooth operations.
               </p>
               <p className="flex justify-items align-items mt-5">
-                In today’s digital-first landscape, your IT infrastructure is the backbone of your business. 
-                We provide end-to-end management of your technology environment, ensuring that your systems 
-                are not just operational, but optimized for performance, security, and growth. 
-                By proactively monitoring and maintaining your assets, we minimize downtime and 
-                let you focus on your core business goals.
+                We design and implement secure, scalable IT
+                infrastructure from network setup and server
+                deployment to data center management
+                providing a solid foundation for your digital
+                operations
               </p>
             </motion.div>
           </div>
@@ -206,9 +310,17 @@ const AboutUs = () => {
                 Safeguard your business from modern threats.
               </p>
               <p className=" flex justify-items align-items mt-5">
-                In an era where cyber attacks are becoming more sophisticated and frequent, a reactive approach to security is no longer sufficient.
-                We provide a comprehensive, multi-layered defense strategy designed to anticipate, detect, and neutralize threats before they impact your operations.
-                Our goal is to protect your critical assets, customer data, and brand reputation, giving you the confidence to innovate without fear.
+                Comprehensive security services to
+                protect your business from modern threats:
+                Ethical hacking (penetration testing)
+                Cloud, network, and web security
+                Data privacy protection, SIEM, PAM, NDR, and DMARC setups
+                Data leak prevention initiatives
+                Security training for staff to build human resilience
+                These services proactively identify vulnerabilities
+                and help prevent unauthorized access while reducing
+                long term maintenance costs.
+
               </p>
             </motion.div>
             <motion.img
@@ -231,15 +343,72 @@ const AboutUs = () => {
             />
             <motion.div variants={textRight} initial="hidden" whileInView="visible">
               <h3 className="text-3xl font-bold mb-4">
-                Smart IT Solutions
+                Cloud Solutions
               </h3>
               <p className="text-gray-600 -mt-5">
                 Next-Gen IT for the Modern Enterprise.
               </p>
               <p className=" flex justify-items align-items mt-5">
-                We create custom IT solutions designed to align with your unique business needs, ensuring efficiency, scalability, and security. 
-                You gain a dedicated technology partner committed to understanding your requirements and delivering secure, future-ready solutions.
+                End to end cloud transformation services
+                including cloud migration, implementation,
+                optimization, and ongoing management. These
+                solutions are designed to boost operational
+                efficiency, cost-effectiveness, and adaptability.
+
               </p>
+
+            </motion.div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div variants={textLeft} initial="hidden" whileInView="visible">
+              <h3 className="text-3xl font-bold mb-4">
+                Consultancy Services
+              </h3>
+              <p className="text-gray-600 -mt-5">
+                Transforming Challenges into Opportunities.
+              </p>
+              <p className=" flex justify-items align-items mt-5">
+                Gain deep expertise and clarity through tailored
+                consultancy offerings. Whether it's business technology
+                strategy, architecture planning, or actionable roadmaps,
+                Artiflex helps drive your organization forward with expert
+                recommendations and perspectives
+              </p>
+            </motion.div>
+            <motion.img
+              src={consult}
+              className="rounded-3xl shadow-xl"
+              variants={imageRight}
+              initial="hidden"
+              whileInView="visible"
+            />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.img
+              src={customer}
+              className="rounded-3xl shadow-xl"
+              variants={imageLeft}
+              initial="hidden"
+              whileInView="visible"
+            />
+            <motion.div variants={textRight} initial="hidden" whileInView="visible">
+              <h3 className="text-3xl font-bold mb-4">
+                Customer Support
+              </h3>
+              <p className="text-gray-600 -mt-5">
+                Exceeding your expectations, consistently.
+              </p>
+              <p className=" flex justify-items align-items mt-5">
+                End to end cloud transformation services
+                including cloud migration, implementation,
+                optimization, and ongoing management. These
+                solutions are designed to boost operational
+                efficiency, cost-effectiveness, and adaptability.
+
+              </p>
+
             </motion.div>
           </div>
 
