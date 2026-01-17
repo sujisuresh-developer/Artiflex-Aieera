@@ -1,11 +1,11 @@
 const logos = [
-  "/dubai-duty-free-seeklogo.png",
+  "/dub.png",
   "/28.png",
   "/idAIdoQlaN_1766401349277.png",
   "/idIu5Lf4Sf_1766399953051.png",
-  "/idmHZx4yfP_logos.png",
+  "/nbtc.png",
   "/idMNWTiY7c_logos.png",
-  "/idze5P5g5P_logos.png",
+  "/shaw.jpeg",
   "/LnW7oU12lP7gNmfZJtUdl05IXcB1736410981931_200x200.png",
 ]
 
@@ -21,13 +21,14 @@ const LogoAutoScroll = () => {
 
         {/* MARQUEE */}
         <div className="relative overflow-hidden">
-          <div className="flex gap-16 animate-logo-scroll w-max">
+          <div className="flex justify-evenly  animate-logo-scroll w-full">
+
 
             {/* duplicate logos for seamless loop */}
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center min-w-[160px]"
+                className="flex items-center  justify-center min-w-[160px]"
               >
                 <img
                   src={logo}
